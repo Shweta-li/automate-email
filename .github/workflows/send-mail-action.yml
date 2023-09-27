@@ -1,1 +1,19 @@
+name: Send automated email
 
+on:
+  workflow_dispatch:
+
+jobs:
+  active-github-users-email:
+    runs-on: [ self-hosted ]
+    steps:
+      - name: Send mail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: mailhub.gap.com
+          server_port: 25
+          subject: Automated email generated via GHA
+          to: Shwetali_jadhav@gap.com
+          from: Shwetali_jadhav@gap.com
+          body: Build job of ${{github.repository}} completed successfully!
+          

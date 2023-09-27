@@ -5,7 +5,7 @@ on:
 
 jobs:
   active-github-users-email:
-    runs-on: [ self-hosted ]
+    runs-on: ubuntu-latest
     steps:
       - name: Send mail
         uses: dawidd6/action-send-mail@v3

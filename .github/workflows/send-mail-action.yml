@@ -13,7 +13,7 @@ jobs:
           server_address: mailhub.gap.com
           server_port: 25
           subject: Automated email generated via GHA
-          to: Shwetali_jadhav@gap.com
-          from: Shwetali_jadhav@gap.com
+          to: shwetali.jadhav2500@gmail.com
+          from: shwetali.jadhav2500@gmail.com
           body: Build job of ${{github.repository}} completed successfully!
           
